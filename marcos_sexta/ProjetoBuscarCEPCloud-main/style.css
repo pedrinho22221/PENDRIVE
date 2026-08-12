@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #06111f, #0d2a45);
+  color: #eaf4ff;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  background: rgba(9, 25, 43, 0.95);
+  border: 1px solid rgba(111, 196, 255, 0.25);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.icone {
+  font-size: 44px;
+  margin-bottom: 8px;
+}
+
+.etiqueta {
+  color: #64d8ff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 8px 0 10px;
+}
+
+.descricao {
+  color: #aac2d8;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.campo-botao {
+  display: flex;
+  gap: 12px;
+}
+
+input {
+  flex: 1;
+  border: 1px solid #284966;
+  border-radius: 12px;
+  padding: 15px 16px;
+  font-size: 17px;
+  background: #071522;
+  color: #ffffff;
+  outline: none;
+}
+
+input:focus {
+  border-color: #64d8ff;
+  box-shadow: 0 0 0 3px rgba(100, 216, 255, 0.15);
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #23b5d3;
+  color: #04131d;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+.mensagem {
+  min-height: 24px;
+  margin-top: 12px;
+  color: #ffd166;
+}
+
+.resultado {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #24435c;
+}
+
+.resultado h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+.dados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.dado {
+  background: #0b2033;
+  border: 1px solid #1e405c;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.dado-maior {
+  grid-column: 1 / -1;
+}
+
+.dado span {
+  display: block;
+  color: #86a7c2;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.dado strong {
+  font-size: 17px;
+  word-break: break-word;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  .card {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .campo-botao {
+    flex-direction: column;
+  }
+
+  button {
+    min-height: 50px;
+  }
+
+  .dados {
+    grid-template-columns: 1fr;
+  }
+
+  .dado-maior {
+    grid-column: auto;
+  }
+
+  
+}

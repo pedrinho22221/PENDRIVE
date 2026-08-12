@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de CEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main class="container">
+    <section class="card">
+      <div class="icone">☁️</div>
+      <p class="etiqueta">Computação em Nuvem</p>
+      <h1>Consulta de CEP</h1>
+      <p class="descricao">
+        Digite um CEP para buscar o endereço utilizando a API ViaCEP.
+      </p>
+
+      <form id="formCep">
+        <label for="cep">CEP</label>
+
+        <div class="campo-botao">
+          <input
+            type="text"
+            id="cep"
+            placeholder="Ex.: 01001-000"
+            maxlength="9"
+            autocomplete="postal-code"
+          >
+
+          <button type="submit" id="botaoBuscar">Buscar</button>
+        </div>
+
+        <p id="mensagem" class="mensagem" aria-live="polite"></p>
+      </form>
+
+      <section id="resultado" class="resultado oculto">
+        <h2>Endereço encontrado</h2>
+
+        <div class="dados">
+          <div class="dado dado-maior">
+            <span>Logradouro</span>
+            <strong id="logradouro">-</strong>
+          </div>
+
+          <div class="dado">
+            <span>Bairro</span>
+            <strong id="bairro">-</strong>
+          </div>
+
+          <div class="dado">
+            <span>Cidade</span>
+            <strong id="cidade">-</strong>
+          </div>
+
+          <div class="dado">
+            <span>Estado</span>
+            <strong id="estado">-</strong>
+          </div>
+
+          <div class="dado">
+            <span>DDD</span>
+            <strong id="ddd">-</strong>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
