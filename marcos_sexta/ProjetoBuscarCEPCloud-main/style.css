@@ -7,8 +7,24 @@
 body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #06111f, #0d2a45);
-  color: #eaf4ff;
+  background: linear-gradient(135deg, #feff6b, #ffffbe);
+  color: #ffffff;
+}
+
+.banner {
+  border-radius: 5px;
+  box-shadow: 0 0 20px 5px #101c55;
+
+  margin-top: 100px;
+  width: 900px;
+  height: 450px;
+
+  background-image: url("banner.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  box-sizing: border-box;
 }
 
 .container {
@@ -22,11 +38,13 @@ body {
 .card {
   width: 100%;
   max-width: 760px;
-  background: rgba(9, 25, 43, 0.95);
-  border: 1px solid rgba(111, 196, 255, 0.25);
-  border-radius: 24px;
+  background: #feff5f;
+  border: 1px solid #fcfc88;
+  border-radius: 9px;
   padding: 36px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 24px 60px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 20px 5px #101c55;
+  margin-top: 120px;
 }
 
 .icone {
@@ -34,21 +52,15 @@ body {
   margin-bottom: 8px;
 }
 
-.etiqueta {
-  color: #64d8ff;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 13px;
-}
 
 h1 {
   font-size: 40px;
   margin: 8px 0 10px;
+  color: #04131d;
 }
 
 .descricao {
-  color: #aac2d8;
+  color: #101c55;
   line-height: 1.6;
   margin-bottom: 28px;
 }
@@ -57,6 +69,7 @@ label {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
+  color: #100867;
 }
 
 .campo-botao {
@@ -70,7 +83,7 @@ input {
   border-radius: 12px;
   padding: 15px 16px;
   font-size: 17px;
-  background: #071522;
+  background: #100867;
   color: #ffffff;
   outline: none;
 }
@@ -86,8 +99,8 @@ button {
   padding: 0 24px;
   font-size: 16px;
   font-weight: bold;
-  background: #23b5d3;
-  color: #04131d;
+  background: #100867;
+  color: #ffffff;
   cursor: pointer;
   transition: transform 0.2s, filter 0.2s;
 }
@@ -106,18 +119,19 @@ button:disabled {
 .mensagem {
   min-height: 24px;
   margin-top: 12px;
-  color: #ffd166;
+  color: #100867;
 }
 
 .resultado {
   margin-top: 28px;
   padding-top: 24px;
-  border-top: 1px solid #24435c;
+  border-top: 1px solid #100867;
 }
 
 .resultado h2 {
   margin-bottom: 18px;
   font-size: 22px;
+  color: #100867;
 }
 
 .dados {
@@ -127,8 +141,8 @@ button:disabled {
 }
 
 .dado {
-  background: #0b2033;
-  border: 1px solid #1e405c;
+  background: #100867;
+  border: 1px solid #100867;
   border-radius: 14px;
   padding: 16px;
 }
